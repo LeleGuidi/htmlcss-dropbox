@@ -29,8 +29,18 @@ button {
     border: 1px solid #0061ff;
 }
 
-main > section:first-child {
-    margin: ;
+section {
+    padding-top: 210px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-left {
+    float: left;
 }
 
 /*------------------ 
@@ -40,6 +50,14 @@ main > section:first-child {
 body {
     font-family: 'Open Sans', sans-serif;
     color: black;
+}
+
+h1 {
+    font-size: 76px;
+}
+
+p {
+    line-height: 23px;
 }
 
 /*------------------ 
@@ -54,6 +72,7 @@ header {
     Font-size 0 per rimuovere spazio tra inline-block */
     width: 100%;
     background-color: white;
+    z-index: 10;
 }
 
 .header-container {
@@ -96,6 +115,41 @@ img, li, button {
 
 .hero {
     background-color: #b4d0e7;
-    height: 100vh;
     width: 100%;
+    padding-top: 100px;
+}
+
+.hero .container-large {
+    position: relative;
+    bottom: -70px;
+}
+
+.hero .col-left {
+    padding-top: 45px;
+}
+
+.clearfix > div:first-child {
+    width: 35%;
+    padding-right: 50px;
+}
+
+.clearfix > div:last-child {
+    width: 65%;
+    
+}
+
+.hero .col-left img {
+    width: 100%;
+}
+
+.btn-hero {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.hero i {
+    font-size: 30px;
+    padding-top: 40px;
+    font-weight: bold;
 }
