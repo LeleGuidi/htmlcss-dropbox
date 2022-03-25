@@ -1,7 +1,6 @@
 /*------------------ 
     RESET
 ------------------*/
-
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -11,7 +10,6 @@
 /*------------------ 
     COMMON
 ------------------*/
-
 .container {
     max-width: 1080px;
     margin: auto;
@@ -30,7 +28,7 @@ button {
 }
 
 section {
-    padding-top: 210px;
+    padding-top: 205px;
 }
 
 .clearfix::after {
@@ -42,6 +40,10 @@ section {
 .col-left {
     float: left;
 }
+
+/*------------------ 
+    MARGINS
+------------------*/
 
 /*------------------ 
     TYPO
@@ -56,14 +58,25 @@ h1 {
     font-size: 76px;
 }
 
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
 p {
     line-height: 23px;
+}
+
+.font-zero {
+    font-size: 0px;
 }
 
 /*------------------ 
     HEADER
 ------------------*/
-
 header {
     position: fixed;
     padding: 24px 20px;
@@ -112,7 +125,6 @@ img, li, button {
 /*------------------ 
     SECTION HERO
 ------------------*/
-
 .hero {
     background-color: #b4d0e7;
     width: 100%;
@@ -128,12 +140,12 @@ img, li, button {
     padding-top: 45px;
 }
 
-.clearfix > div:first-child {
+.hero .clearfix > div:first-child {
     width: 35%;
     padding-right: 50px;
 }
 
-.clearfix > div:last-child {
+.hero .clearfix > div:last-child {
     width: 65%;
     
 }
@@ -152,4 +164,105 @@ img, li, button {
     font-size: 30px;
     padding-top: 40px;
     font-weight: bold;
+}
+
+/*------------------ 
+    SECTION PLAN BUSINESS
+------------------*/
+.cont-radio {
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+.cont-radio input {
+   transform: scale(1.2);
+   vertical-align: middle;
+}
+
+.cont-radio label {
+    margin-right: 17px;
+}
+
+.plan-business, .plan-business-middle {
+    min-height: 1060px;
+    border: 1px solid #d0d0d3;
+    width: calc(100%/3 - 40px);
+}
+
+.plan-business-middle {
+    margin: auto 60px;
+}
+
+.title-plan {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.title-plan i {
+    margin-right: 5px;
+}
+
+.plans-details {
+    padding: 35px 30px;
+}
+
+.col-left.plan-business p, .col-left.plan-business-middle p {
+    color: #637381;
+}
+
+.price {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.plans-details a {
+    color: #0061ff;
+}
+
+.plans-details ul {
+    list-style: none;
+}
+
+.plans-details ul {
+    margin: 35px 0px;
+}
+
+.plans-details button {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.plans-details hr {
+    border:0.5px solid #d0d0d3;
+    width: 20%;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.plans-details .checked-list {
+    margin: 0;
+}
+
+.plans-details ul li{
+    padding: 15px 0px;
+    display: inline-block;
+    position: relative; /* per permettere al testo della lista di non andare a capo sotto al fontawesome*/
+    vertical-align: middle;
+}
+
+.plans-details ul i {
+    position: absolute; /* per permettere al testo della lista di non andare a capo sotto al fontawesome*/
+    top: 18px;
+}
+
+.plans-details ul small {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.fa-solid.fa-check {
+    color: #0061ff;
 }
