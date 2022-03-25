@@ -7,3 +7,17 @@
     margin: 0%;
     padding: 0%;
 }
+
+/*------------------ 
+    COMMON
+------------------*/
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.container-large {
+    max-width: 1300px;
+    margin: auto;
+}
