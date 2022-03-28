@@ -448,3 +448,31 @@ section.bc-cyan {
     padding: 140px 0;
 }
 
+/*------------------ 
+    FAQ SECTION
+------------------*/
+#faq h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+#faq hr {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.faq {
+    position: relative;
+}
+
+#faq p {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#faq i {
+    position: absolute;
+    right: 30px;
+    display: inline-block;
+}
