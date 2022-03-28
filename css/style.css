@@ -20,13 +20,6 @@
     margin: auto;
 }
 
-button {
-    color: white;
-    background-color: #0061ff;
-    padding: 10px 20px;
-    border: 1px solid #0061ff;
-}
-
 section {
     padding-top: 205px;
 }
@@ -41,9 +34,41 @@ section {
     float: left;
 }
 
+.half-width-containers {
+    width: 50%;
+    display: inline-block;
+}
+
+section img {
+    width: 100%;
+}
 /*------------------ 
-    MARGINS
+    BUTTONS
 ------------------*/
+button {
+    color: white;
+    background-color: #0061ff;
+    padding: 10px 20px;
+    border: 1px solid #0061ff;
+}
+
+.btn-white {
+background-color: white;
+color: black;
+border: 1px solid black;
+}
+
+.btn-hero {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+/*------------------ 
+    MARGINS/PADDING
+------------------*/
+.pad-left-top-50 {
+    padding: 50px 0 0 50px;
+}
 
 /*------------------ 
     TYPO
@@ -86,10 +111,6 @@ header {
     width: 100%;
     background-color: white;
     z-index: 10;
-}
-
-.header-containers {
-    width: 50%;
 }
 
 header div:last-child {
@@ -148,16 +169,6 @@ img, li, button {
 .hero .clearfix > div:last-child {
     width: 65%;
     
-}
-
-.hero .col-left img {
-    width: 100%;
-}
-
-.btn-hero {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-size: 17px;
 }
 
 .hero i {
@@ -273,4 +284,16 @@ img, li, button {
 
 .container.enterprise .price {
     margin-bottom: 40px;
+}
+
+
+/*------------------ 
+    SECTION PARTNER
+------------------*/
+#partners {
+    padding-top: 150px;
+}
+
+.col-left.half-width-containers.pad-left-top-50 p {
+    margin: 40px 0 30px 0;
 }
