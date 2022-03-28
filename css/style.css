@@ -91,12 +91,21 @@ h3 {
     font-size: 25px;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 p {
     line-height: 23px;
+    font-size: 15px;
 }
 
 .font-zero {
     font-size: 0px;
+}
+
+a {
+    color: black;
 }
 
 /*------------------ 
@@ -296,4 +305,31 @@ img, li, button {
 
 .col-left.half-width-containers.pad-left-top-50 p {
     margin: 40px 0 30px 0;
+}
+
+/*------------------ 
+    SECTION DROPBOX BUSINESS
+------------------*/
+#dropbox-business {
+    padding-top: 120px;
+}
+
+#dropbox-business .col-left {
+    width: calc(100% / 3 - 50px);
+}
+
+#dropbox-business h2 {
+    margin-bottom: 65px;
+}
+
+#dropbox-business h4 {
+margin: 25px 0 35px 0;
+}
+
+#dropbox-business .col-left {
+    margin-bottom: 120px;
+}
+
+.col-left.col-middle {
+    margin: 0 75px;
 }
