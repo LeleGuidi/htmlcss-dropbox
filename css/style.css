@@ -476,3 +476,59 @@ section.bc-cyan {
     right: 30px;
     display: inline-block;
 }
+
+/*------------------ 
+    FOOTER
+------------------*/
+
+footer {
+    margin-top: 120px;
+    background-color: black;
+    color: white;
+}
+
+.footer-top {
+    padding: 100px 0;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 12px;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+footer .col-left {
+    width: 20%;
+}
+
+footer hr {
+    width: 10%;
+    color: white;
+}
+
+small.language {
+    color: #656565;
+}
+
+small.language::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "  \f0d8";
+}
+
+small.language::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f57d  ";
+}
+
+.footer-bottom {
+    padding-bottom: 20px;
+}
