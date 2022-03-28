@@ -88,7 +88,7 @@ header {
     z-index: 10;
 }
 
-.header-container {
+.header-containers {
     width: 50%;
 }
 
@@ -169,6 +169,10 @@ img, li, button {
 /*------------------ 
     SECTION PLAN BUSINESS
 ------------------*/
+.plan-business, .plan-business-middle, .container.enterprise {
+    border: 1px solid #d0d0d3;
+}
+
 .cont-radio {
     margin-top: 55px;
     margin-bottom: 40px;
@@ -185,7 +189,6 @@ img, li, button {
 
 .plan-business, .plan-business-middle {
     min-height: 1060px;
-    border: 1px solid #d0d0d3;
     width: calc(100%/3 - 40px);
 }
 
@@ -198,10 +201,6 @@ img, li, button {
     width: 100%;
     padding: 15px 0;
     border-bottom: 1px solid #d0d0d3;
-}
-
-.title-plan i {
-    margin-right: 5px;
 }
 
 .plans-details {
@@ -223,11 +222,24 @@ img, li, button {
 }
 
 .plans-details ul {
+    margin: 35px 0px;
     list-style: none;
 }
 
-.plans-details ul {
-    margin: 35px 0px;
+.plans-details li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    text-indent: -10px;
+}
+
+/* inserire i check prima dei li  */
+.plans-details .checked-list li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: inline-block;
+    content: "\f00c";
+    color: #0061ff;
+    margin-right: 5px;
 }
 
 .plans-details button {
@@ -238,31 +250,27 @@ img, li, button {
 .plans-details hr {
     border:0.5px solid #d0d0d3;
     width: 20%;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 45px;
 }
 
-.plans-details .checked-list {
-    margin: 0;
+.container.enterprise {
+    margin-top: 50px;
 }
 
-.plans-details ul li{
-    padding: 15px 0px;
-    display: inline-block;
-    position: relative; /* per permettere al testo della lista di non andare a capo sotto al fontawesome*/
-    vertical-align: middle;
+/* per posizionare in modo assoluto il bottone in alto a destra  */
+.container.enterprise .plans-details {
+    position: relative;
 }
 
-.plans-details ul i {
-    position: absolute; /* per permettere al testo della lista di non andare a capo sotto al fontawesome*/
-    top: 18px;
+.container.enterprise .plans-details button {
+    width: auto;
+    padding: 10px 70px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
 
-.plans-details ul small {
-    margin-left: 20px;
-    display: inline-block;
-}
-
-.fa-solid.fa-check {
-    color: #0061ff;
+.container.enterprise .price {
+    margin-bottom: 40px;
 }
