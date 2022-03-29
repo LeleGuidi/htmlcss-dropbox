@@ -457,25 +457,63 @@ section.bc-cyan {
     font-size: 30px;
 }
 
-#faq hr {
+.accordion {
     width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    background-color: #f5f5f5;
+    overflow: hidden;
 }
 
-.faq {
-    position: relative;
+.accordion-label,
+.accordion-content {
+    padding: 30px 20px;
 }
 
-#faq p {
+.accordion-label {
+    display: block;
     font-weight: bold;
-    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+    background-color: white;
+    border-bottom: 1px solid #f5f5f5;
 }
 
-#faq i {
+.accordion-label:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-label::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
     position: absolute;
-    right: 30px;
-    display: inline-block;
+    right: 20px;
+    top: 40px;
+    content: "\f107";
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+}
+
+.accordion-content {
+    background-color: white;
+    line-height: 23px;
+    font-size: 0 .9em;
+    display: none;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-input:checked ~ .accordion-content {
+    display: block;
+}
+
+.accordion-content p {
+    font-weight: normal;
+}
+
+.accordion-input:checked ~ .accordion-label::after {
+    transform: translateY(-50%) rotate(0.5turn );
 }
 
 /*------------------ 
