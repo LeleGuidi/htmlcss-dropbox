@@ -180,6 +180,7 @@ header div:last-child {
 
 header img {
     margin-right: 20px;
+    max-width: 20%;
 }
 
 .header-container, header ul, header ul li {
@@ -417,7 +418,7 @@ margin: 25px 0 35px 0;
 #team .col-left.bc-grey {
     width: 40%;
     padding: 50px;
-    min-height: 30vw;
+    max-height: 30vw;
 }
 
 #team img {
